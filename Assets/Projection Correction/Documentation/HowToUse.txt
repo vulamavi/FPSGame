@@ -1,0 +1,42 @@
+
+This package requires Unity Pro
+
+Projection Correction is a Post Effect that counters the distortion that appears away from the center of the screen, 
+as a result of the way the scene is rendered on a flat plane. 
+The higher the field of view, the more this is visble.
+
+
+Usage:
+
+Mostly usefull for when rendering screenshots with a large field of view that might be cropped in several ways, 
+or that need to be combined with different screenshots. 
+Generally not really usefull for use ingame.
+
+It always only corrects horizontally or vertically. 
+(It can't do both at the same time, because that's impossible)
+
+
+It has 2 modes:
+
+- Full Correction
+basically acts as if the scene is projected on a cylinder, that is then unfold onto a plane.  
+(rather than projecting straight onto a plane)
+Rotating the camera either horizontally or vertically (depends on the setup) clearly shows what this does, 
+as everything on screen will remain the exact same shape, it will only slide in or out of view. 
+(because of this, the effect is usefull for stitching together screenshots for a 360 view)
+see FullCorrection.png
+
+- Simple Correction
+only corrects the stretching that appears away from the center of the view.
+Less radical than the Full Correction.
+see SimpleCorrection.png
+
+
+Setup:
+
+- select the camera in the scene
+- select Component > Image Effects > Projection Correction to add this effect to the camera
+- parameters:
+	- Horizontally: determines wether to correct horizontally or vertically
+	- Simple: determines which correction algorithm (mode) to use
+	- Intensity: a value between 0 and 1, determines the strength of the effect: 0 is no effect, 1 is full effect.

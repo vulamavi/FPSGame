@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b79eb8bdec4950d4fa030f78b4fb921b
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - HorizontalFullShader: {fileID: 4800000, guid: 789fb24792c73b543a07c360d33410ae,
+      type: 3}
+  - VerticalFullShader: {fileID: 4800000, guid: 33fb2bd9e23f6d0499c677a9b6afe85c,
+      type: 3}
+  - HorizontalSimpleShader: {fileID: 4800000, guid: a5eff5368c6df294987f74f3cd003090,
+      type: 3}
+  - VerticalSimpleShader: {fileID: 4800000, guid: 7edcd0a872e242145aea0535f52dc426,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
